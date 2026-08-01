@@ -1,0 +1,22 @@
+{
+  "productId": "gvm.light.sd300d",
+  "brand": "GVM",
+  "displayName": "SD300D",
+  "familyName": "SD Series Monolights",
+  "aliases": [],
+  "regions": [
+    "global"
+  ],
+  "languages": [
+    "en",
+    "fr"
+  ],
+  "productKind": "CONTINUOUS_LIGHT",
+  "collectionStatus": "COLLECTED",
+  "coverageFlags": [
+    "PILOT"
+  ],
+  "sourceIds": [
+    "src-gvm-001"
+  ]
+}

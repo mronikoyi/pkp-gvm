@@ -1,0 +1,78 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://community.invalid/pkp-gvm/schemas/chunk.schema.json",
+  "title": "PKP chunk",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "chunkId",
+    "sourceId",
+    "productIds",
+    "categories",
+    "topics",
+    "content",
+    "language",
+    "firmwareFrom",
+    "firmwareTo",
+    "evidenceIds",
+    "verificationStatus"
+  ],
+  "properties": {
+    "schemaVersion": { "const": "1.0" },
+    "chunkId": { "type": "string", "pattern": "^[a-z0-9._-]+$" },
+    "sourceId": { "type": "string", "pattern": "^src-[a-z0-9_-]+$" },
+    "productIds": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "type": "string", "pattern": "^gvm\\." }
+    },
+    "categories": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "FLASH", "TRIGGER", "STROBE", "CONTINUOUS_LIGHT",
+          "LED_PANEL", "MODIFIER", "POWER", "ACCESSORY",
+          "BRAND", "COMPATIBILITY", "SPECIFICATIONS"
+        ]
+      }
+    },
+    "topics": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "specifications", "compatibility", "operation", "setup",
+          "firmware", "maintenance", "safety", "warranty",
+          "mounting", "power_management", "wireless", "group_control",
+          "menu_navigation", "troubleshooting", "accessories",
+          "measurements", "variant_differences", "marketing_conflict",
+          "continuous_lighting", "photometric_specs", "brand_identity"
+        ]
+      }
+    },
+    "content": { "type": "string", "minLength": 1, "maxLength": 2000 },
+    "language": { "type": "string", "minLength": 2 },
+    "firmwareFrom": { "type": ["string", "null"], "pattern": "^\\d+(?:\\.\\d+)*$" },
+    "firmwareTo": { "type": ["string", "null"], "pattern": "^\\d+(?:\\.\\d+)*$" },
+    "evidenceIds": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "type": "string" }
+    },
+    "verificationStatus": {
+      "enum": [
+        "SOURCE_CONFIRMED",
+        "CROSS_SOURCE_CONFIRMED",
+        "HUMAN_REVIEW_REQUIRED",
+        "CONFLICT",
+        "UNKNOWN"
+      ]
+    }
+  }
+}

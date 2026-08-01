@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "1.0",
+  "id": "gvm.brand-core",
+  "name": "GVM Brand Core",
+  "version": "0.1.0",
+  "kind": "BRAND",
+  "description": "GVM brand identity, continuous lighting terminology, and official catalog coverage",
+  "productIds": [
+    "gvm.accessory.gvm--flight-case-for-the-tq-ld"
+  ],
+  "dependencies": [],
+  "languages": [
+    "en",
+    "fr"
+  ]
+}

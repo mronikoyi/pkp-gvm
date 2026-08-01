@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "1.0",
+  "id": "gvm.compatibility",
+  "name": "GVM Compatibility Matrix",
+  "version": "0.1.0",
+  "kind": "MATRIX",
+  "description": "Inter-product compatibility matrix for GVM lights, softboxes, and power sources",
+  "productIds": [
+    "gvm.accessory.gvm--flight-case-for-the-tq-ld",
+    "gvm.accessory.gvm--g175-alluminum-alloy-5-section-monopod-with-video-fluid-head",
+    "gvm.accessory.gvm-10s-bi-color-professional-video-on-camera-video-light-with-control-knob",
+    "gvm.accessory.gvm-14s-45w-bi-color-led-ring-light-kit-(14\")",
+    "gvm.accessory.gvm-20w-bi-color-video-light-on-camera-light",
+    "gvm.accessory.gvm-30w-soft-light-bi-color-led-key-light-2-lights-kit(10\")",
+    "gvm.accessory.gvm-7s-rgb-led-on-camera-video-light-with-wi-fi-control",
+    "gvm.accessory.gvm-7sm-mini-double-sided-rgb-&-led-video-light-on-camera-light",
+    "gvm.accessory.gvm-850d-rgb-led-studio-video-light-kit(2-light-kit)",
+    "gvm.accessory.gvm-850d-rgb-led-studio-video-light-kit(3-light-kit)",
+    "gvm.accessory.gvm-8rs-rgb-full-color-camera-light",
+    "gvm.accessory.gvm-at12b--dual-color-temperature-air-column-light---20w-|-wide-fill-light-range",
+    "gvm.accessory.gvm-b100c-100w-rgb&bi-color-flexible-led-light",
+    "gvm.accessory.gvm-b100c-100w-rgb&bi-color-flexible-led-light（open-box）",
+    "gvm.accessory.gvm-b200c-200w-rgb&bi-color-flexible-led-light",
+    "gvm.accessory.gvm-ball-head-yt-10",
+    "gvm.accessory.gvm-bd-100d--upgraded-rgb-&-bi-color-handheld-light-(3-ft)(buy-1-get-1-free)(add-2-items-to-cart)",
+    "gvm.accessory.gvm-bd25r-bi-color-rgb-led-light-wand-(24\")",
+    "gvm.accessory.gvm-bd25r-bi-color-rgb-led-light-wand-(24\")（open-box）",
+    "gvm.accessory.gvm-bd45r-bi-color-rgb-led-light-wand-(48\")",
+    "gvm.accessory.gvm-bd45r-bi-color-rgb-led-light-wand-(48\")（buy-1-get-1-free）",
+    "gvm.accessory.gvm-bd60d-upgraded--rgb-handheld-led-video--wand--light(21-8\")(buy-1-get-1-free)",
+    "gvm.accessory.gvm-bracket-for-bd100,bd60",
+    "gvm.accessory.gvm-bx8c--2-in-1-rgb-led-tube-light-(15-9\")",
+    "gvm.accessory.gvm-cm2-wireless-microphone-system-for-smartphones",
+    "gvm.accessory.gvm-connector-for-bd25r-bd45r",
+    "gvm.accessory.gvm-cxt36s-for-pocket-light",
+    "gvm.accessory.gvm-d190-monopod-for-hydraulic-fluid-head",
+    "gvm.accessory.gvm-dynamic-microphone,-xlr-usb-podcast-microphone-with-mute-button,-monitoring-volume-control,-headphone-jack,-cardioid-gaming-mic,-vocal-mic-for-pc,-mac,-recording,-studio-and-singing",
+    "gvm.accessory.gvm-g169-carbon-fiber-4-section-monopod-with-video-fluid-head"
+  ],
+  "dependencies": [
+    "gvm.brand-core",
+    "gvm.catalog"
+  ],
+  "languages": [
+    "en",
+    "fr"
+  ]
+}

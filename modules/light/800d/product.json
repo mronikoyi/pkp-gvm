@@ -1,0 +1,22 @@
+{
+  "productId": "gvm.light.800d",
+  "brand": "GVM",
+  "displayName": "800D-II 40W Bi-color & RGB Video Panel Light",
+  "familyName": "800D Panel Series",
+  "aliases": [],
+  "regions": [
+    "global"
+  ],
+  "languages": [
+    "en",
+    "fr"
+  ],
+  "productKind": "LED_PANEL",
+  "collectionStatus": "COLLECTED",
+  "coverageFlags": [
+    "PILOT"
+  ],
+  "sourceIds": [
+    "src-gvm-001"
+  ]
+}

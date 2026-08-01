@@ -1,0 +1,37 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://community.invalid/pkp-gvm/schemas/evidence.schema.json",
+  "title": "PKP evidence",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "evidenceId",
+    "sourceId",
+    "section",
+    "page",
+    "quote",
+    "summary",
+    "firmwareFrom",
+    "firmwareTo",
+    "verificationStatus"
+  ],
+  "properties": {
+    "evidenceId": { "type": "string", "pattern": "^ev-[a-z0-9._-]+$" },
+    "sourceId": { "type": "string", "pattern": "^src-[a-z0-9_-]+$" },
+    "section": { "type": "string", "minLength": 1 },
+    "page": { "type": ["integer", "null"], "minimum": 0 },
+    "quote": { "type": ["string", "null"], "maxLength": 300 },
+    "summary": { "type": "string", "minLength": 1 },
+    "firmwareFrom": { "type": ["string", "null"], "pattern": "^\\d+(?:\\.\\d+)*$" },
+    "firmwareTo": { "type": ["string", "null"], "pattern": "^\\d+(?:\\.\\d+)*$" },
+    "verificationStatus": {
+      "enum": [
+        "SOURCE_CONFIRMED",
+        "CROSS_SOURCE_CONFIRMED",
+        "HUMAN_REVIEW_REQUIRED",
+        "CONFLICT",
+        "UNKNOWN"
+      ]
+    }
+  }
+}

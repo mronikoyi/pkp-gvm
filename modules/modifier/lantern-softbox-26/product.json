@@ -1,0 +1,29 @@
+{
+  "productId": "gvm.modifier.lantern-softbox-26",
+  "brand": "GVM",
+  "displayName": "GVM Lantern Globe Softbox (26\")",
+  "familyName": "Lantern Softboxes",
+  "aliases": [],
+  "regions": [
+    "global"
+  ],
+  "languages": [
+    "en",
+    "fr"
+  ],
+  "productKind": "MODIFIER",
+  "collectionStatus": "COLLECTED",
+  "coverageFlags": [
+    "PILOT"
+  ],
+  "sourceIds": [
+    "src-gvm-001"
+  ],
+  "mount": {
+    "name": "Bowens Mount",
+    "category": "BOWENS_MOUNT",
+    "evidenceIds": [
+      "ev-gvm-0004"
+    ]
+  }
+}

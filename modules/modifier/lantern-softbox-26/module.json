@@ -1,0 +1,18 @@
+{
+  "schemaVersion": "1.0",
+  "id": "gvm.modifier.lantern-softbox-26",
+  "name": "GVM GVM Lantern Globe Softbox (26\")",
+  "version": "0.1.0",
+  "kind": "PRODUCT",
+  "description": "Knowledge module for GVM GVM Lantern Globe Softbox (26\") (Lantern Softboxes)",
+  "productIds": [
+    "gvm.modifier.lantern-softbox-26"
+  ],
+  "dependencies": [
+    "gvm.brand-core"
+  ],
+  "languages": [
+    "en",
+    "fr"
+  ]
+}

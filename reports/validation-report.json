@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "1.0",
+  "generatedAt": "2026-08-01T11:32:32.755Z",
+  "status": "PASS",
+  "errors": [],
+  "warnings": [],
+  "stats": {
+    "jsonFiles": 33,
+    "jsonlFiles": 18,
+    "jsonlRecords": 32,
+    "products": 414,
+    "modules": 6,
+    "facts": 15,
+    "rules": 3,
+    "menuPaths": 0,
+    "firmwareEvents": 0,
+    "chunks": 8,
+    "relations": 3,
+    "sources": 1,
+    "evidence": 4
+  }
+}

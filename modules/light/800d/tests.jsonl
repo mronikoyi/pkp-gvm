@@ -1,0 +1,1 @@
+{"schemaVersion": "1.0", "testId": "test-800d-specs", "productId": "gvm.light.800d", "testKind": "SPEC_VERIFICATION", "description": "Verify 800D-II 40W Bi-color & RGB Video Panel Light specifications against official GVM product data.", "expectedResult": "Power 40W, bi-color and RGB modes, NP-F750 battery kits.", "evidenceIds": ["ev-gvm-0003"]}

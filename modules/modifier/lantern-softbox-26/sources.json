@@ -1,0 +1,32 @@
+{
+  "schemaVersion": "1.0",
+  "sources": [
+    {
+      "sourceId": "src-gvm-001",
+      "url": "https://shop.gvmled.com/products.json",
+      "title": "GVM Official Product Catalog Feed",
+      "publisher": "Great Video Maker (GVM) / Yuedong Image Equipment Co., Ltd.",
+      "trustStatus": "OFFICIAL",
+      "archivedAt": null,
+      "accessStatus": "UNVERIFIED",
+      "lastModified": null,
+      "languages": [
+        "en",
+        "fr"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "evidenceId": "ev-gvm-0004",
+      "sourceId": "src-gvm-001",
+      "section": "Product page (Lantern Softbox)",
+      "page": null,
+      "quote": "skirt set to control the 270-degree beam spread. The Lantern has a Bowens mount that is suitable for GVM lights such as G100W or LS-P80S series",
+      "summary": "26-inch lantern softbox; Bowens mount, 270-degree beam, skirt set, quick release; hosts G100W / LS-P80S.",
+      "firmwareFrom": null,
+      "firmwareTo": null,
+      "verificationStatus": "SOURCE_CONFIRMED"
+    }
+  ]
+}

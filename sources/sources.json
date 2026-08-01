@@ -1,0 +1,65 @@
+{
+  "schemaVersion": "1.0",
+  "sources": [
+    {
+      "sourceId": "src-gvm-001",
+      "url": "https://shop.gvmled.com/products.json",
+      "title": "GVM Official Product Catalog Feed",
+      "publisher": "Great Video Maker (GVM) / Yuedong Image Equipment Co., Ltd.",
+      "trustStatus": "OFFICIAL",
+      "archivedAt": null,
+      "accessStatus": "UNVERIFIED",
+      "lastModified": null,
+      "languages": [
+        "en",
+        "fr"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "evidenceId": "ev-gvm-0001",
+      "sourceId": "src-gvm-001",
+      "section": "Product Catalog Feed",
+      "page": null,
+      "quote": null,
+      "summary": "Official products discovered via GVM shop feed",
+      "firmwareFrom": null,
+      "firmwareTo": null,
+      "verificationStatus": "SOURCE_CONFIRMED"
+    },
+    {
+      "evidenceId": "ev-gvm-0002",
+      "sourceId": "src-gvm-001",
+      "section": "Product page (SD300D)",
+      "page": null,
+      "quote": "GVM SD300D 300W Bi-Color LED Monolight ... high color rendering index (CRI) of 97+ ... built-in efficient cooling fan ... Convenient Bluetooth APP Control",
+      "summary": "SD300D 300W bi-color COB monolight; CRI 97+, cooling fan, Bluetooth APP control.",
+      "firmwareFrom": null,
+      "firmwareTo": null,
+      "verificationStatus": "SOURCE_CONFIRMED"
+    },
+    {
+      "evidenceId": "ev-gvm-0003",
+      "sourceId": "src-gvm-001",
+      "section": "Product page (800D)",
+      "page": null,
+      "quote": "GVM-800D-II 40W Bi-color and RGB Video Panel Light ... Includes 2-Set NP-F750 batteries worth $99",
+      "summary": "800D 40W bi-color and RGB panel; 2-light kits include 2 sets of NP-F750 batteries.",
+      "firmwareFrom": null,
+      "firmwareTo": null,
+      "verificationStatus": "SOURCE_CONFIRMED"
+    },
+    {
+      "evidenceId": "ev-gvm-0004",
+      "sourceId": "src-gvm-001",
+      "section": "Product page (Lantern Softbox)",
+      "page": null,
+      "quote": "skirt set to control the 270-degree beam spread. The Lantern has a Bowens mount that is suitable for GVM lights such as G100W or LS-P80S series",
+      "summary": "26-inch lantern softbox; Bowens mount, 270-degree beam, skirt set, quick release; hosts G100W / LS-P80S.",
+      "firmwareFrom": null,
+      "firmwareTo": null,
+      "verificationStatus": "SOURCE_CONFIRMED"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "pack-gvm",
+  "version": "1.0.0",
+  "description": "Photo Knowledge Pack for GVM continuous LED lighting systems",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node tools/run-tests.mjs",
+    "validate": "node tools/validate.mjs",
+    "build": "python tools/build.py"
+  },
+  "devDependencies": {
+    "ajv": "^8.12.0",
+    "ajv-formats": "^2.1.1"
+  }
+}

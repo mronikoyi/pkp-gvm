@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "1.0",
+  "generatedAt": "2026-08-01T07:50:45.758554+00:00",
+  "totalDiscovered": 414,
+  "totalPilotProducts": 3,
+  "pilotProductIds": [
+    "gvm.light.sd300d",
+    "gvm.light.800d",
+    "gvm.modifier.lantern-softbox-26"
+  ],
+  "coverageFlags": {
+    "IDENTITY_ONLY": 411,
+    "PILOT": 3
+  }
+}

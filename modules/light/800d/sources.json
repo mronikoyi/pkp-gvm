@@ -1,0 +1,32 @@
+{
+  "schemaVersion": "1.0",
+  "sources": [
+    {
+      "sourceId": "src-gvm-001",
+      "url": "https://shop.gvmled.com/products.json",
+      "title": "GVM Official Product Catalog Feed",
+      "publisher": "Great Video Maker (GVM) / Yuedong Image Equipment Co., Ltd.",
+      "trustStatus": "OFFICIAL",
+      "archivedAt": null,
+      "accessStatus": "UNVERIFIED",
+      "lastModified": null,
+      "languages": [
+        "en",
+        "fr"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "evidenceId": "ev-gvm-0003",
+      "sourceId": "src-gvm-001",
+      "section": "Product page (800D)",
+      "page": null,
+      "quote": "GVM-800D-II 40W Bi-color and RGB Video Panel Light ... Includes 2-Set NP-F750 batteries worth $99",
+      "summary": "800D 40W bi-color and RGB panel; 2-light kits include 2 sets of NP-F750 batteries.",
+      "firmwareFrom": null,
+      "firmwareTo": null,
+      "verificationStatus": "SOURCE_CONFIRMED"
+    }
+  ]
+}
