@@ -1,1 +1,0 @@
-{"schemaVersion": "1.0", "testId": "test-sd300d-specs", "productId": "gvm.light.sd300d", "testKind": "SPEC_VERIFICATION", "description": "Verify SD300D specifications against official GVM product data.", "expectedResult": "Power 300W, bi-color COB, CRI 97+, Bluetooth APP control, cooling fan.", "evidenceIds": ["ev-gvm-0002"]}

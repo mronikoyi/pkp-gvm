@@ -25,19 +25,34 @@ const stats = {
   evidence: 0,
 };
 
-const readJson = async (file) => JSON.parse(await fs.readFile(file, "utf8"));
-const readJsonl = async (file) => (await fs.readFile(file, "utf8"))
-  .split(/\r?\n/)
-  .filter(Boolean)
-  .map((line, index) => {
-    try { return JSON.parse(line); }
-    catch (error) {
-      errors.push(`${path.relative(root, file)}:${index + 1}: invalid JSON: ${error.message}`);
-      return null;
+const readJson = async (file) => {
+  try {
+    const data = await fs.readFile(file, "utf8");
+    return JSON.parse(data);
+  } catch (err) {
+    if (err.code === "ENOENT") {
+      if (file.endsWith("products.json")) return { products: [] };
+      if (file.endsWith("aliases.json")) return { aliases: [] };
+      if (file.endsWith("sources.json")) return { sources: [], evidence: [] };
+      return {};
     }
-  })
-  .filter(Boolean);
-
+    throw err;
+  }
+};
+const readJsonl = async (file) => {
+  try {
+    const data = await fs.readFile(file, "utf8");
+    return data.split(/\r?\n/).filter(Boolean).map((line, index) => {
+      try { return JSON.parse(line); } catch (error) {
+        errors.push(`${path.relative(root, file)}:${index + 1}: invalid JSON: ${error.message}`);
+        return null;
+      }
+    }).filter(Boolean);
+  } catch (err) {
+    if (err.code === "ENOENT") return [];
+    throw err;
+  }
+};
 async function* walk(directory) {
   for (const entry of await fs.readdir(directory, { withFileTypes: true })) {
     if ([".git", "node_modules", "work", "dist"].includes(entry.name)) continue;
@@ -182,6 +197,55 @@ for await (const file of walk(path.join(root, "modules"))) {
 }
 
 const status = errors.length === 0 ? "PASS" : "FAIL";
+
+const distDir = path.join(root, "dist");
+try {
+  const distFiles = await fs.readdir(distDir);
+  const sigFiles = distFiles.filter(f => f.endsWith(".pkp.sig"));
+  const pkpFiles = distFiles.filter(f => f.endsWith(".pkp"));
+  const manifests = distFiles.filter(f => f.endsWith(".manifest.json") || f === "manifest.json");
+
+  if (manifests.length !== 1 || manifests[0] !== "manifest.json") {
+    errors.push("Release must contain exactly one manifest.json, and no .manifest.json or default.manifest.json");
+  }
+
+  if (manifests.includes("manifest.json")) {
+      const manifestStr = await fs.readFile(path.join(distDir, "manifest.json"), "utf8");
+      const extManifest = JSON.parse(manifestStr);
+      validate("manifest", extManifest, "dist/manifest.json");
+      
+      if (!extManifest.packType) errors.push("packType absent");
+      if (extManifest.repository.url === null) errors.push("repository.url is null");
+      if (extManifest.repository.commit === null) errors.push("repository.commit is null");
+      if (extManifest.version !== "0.1.1") errors.push("Manifest version must match release tag 0.1.1");
+    
+      for (const pkp of pkpFiles) {
+        if (!distFiles.includes(pkp + ".sig")) {
+          errors.push(`Archive without signature: ${pkp}`);
+        }
+      }
+      
+      if (extManifest.installProfiles.FULL_OFFLINE && extManifest.installProfiles.FULL_OFFLINE.length > 128) {
+          if (extManifest.installProfiles.FULL_OFFLINE.includes("ALL_MODULES")) {
+              if (extManifest.modules.length > 128) {
+                  errors.push("FULL_OFFLINE exceeds 128 archives");
+              }
+          }
+      }
+      
+      for (const mod of extManifest.modules) {
+          if (!distFiles.includes(mod.asset)) {
+              errors.push(`Manifest references missing module archive ${mod.asset}`);
+          }
+      }
+  }
+
+} catch (e) {
+  if (e.code !== 'ENOENT') {
+    errors.push(`Error checking dist folder: ${e.message}`);
+  }
+}
+
 const report = {
   schemaVersion: "1.0",
   generatedAt: new Date().toISOString(),

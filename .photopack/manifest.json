@@ -37,7 +37,8 @@
       "productIds": [
         "gvm.accessory.gvm--flight-case-for-the-tq-ld"
       ],
-      "version": "0.1.0"
+      "version": "0.1.1",
+      "asset": "gvm.brand-core-0.1.1.pkp"
     },
     {
       "dependencies": [
@@ -460,7 +461,8 @@
         "gvm.softbox_modifier.gvm-yf4040h-square-softbox(15-75''*15-75)",
         "gvm.softbox_modifier.gvm-yf4060h-square-softbox(15-74''*23-62'')"
       ],
-      "version": "0.1.0"
+      "version": "0.1.1",
+      "asset": "gvm.catalog-0.1.1.pkp"
     },
     {
       "dependencies": [
@@ -500,13 +502,14 @@
         "gvm.accessory.gvm-dynamic-microphone,-xlr-usb-podcast-microphone-with-mute-button,-monitoring-volume-control,-headphone-jack,-cardioid-gaming-mic,-vocal-mic-for-pc,-mac,-recording,-studio-and-singing",
         "gvm.accessory.gvm-g169-carbon-fiber-4-section-monopod-with-video-fluid-head"
       ],
-      "version": "0.1.0"
+      "version": "0.1.1",
+      "asset": "gvm.compatibility-0.1.1.pkp"
     },
     {
       "id": "gvm.light",
       "required": false,
-      "version": "0.1.0",
-      "asset": "gvm.light-0.1.0.pkp",
+      "version": "0.1.1",
+      "asset": "gvm.light-0.1.1.pkp",
       "productIds": [
         "gvm.light.sd300d",
         "gvm.light.800d"
@@ -515,8 +518,8 @@
     {
       "id": "gvm.modifier",
       "required": false,
-      "version": "0.1.0",
-      "asset": "gvm.modifier-0.1.0.pkp",
+      "version": "0.1.1",
+      "asset": "gvm.modifier-0.1.1.pkp",
       "productIds": [
         "gvm.modifier.lantern-softbox-26"
       ]
@@ -530,8 +533,8 @@
     "publicKeyId": "ed25519:mronikoyi-pkp:1"
   },
   "repository": {
-    "type": "git",
-    "url": null
+    "url": "https://github.com/mronikoyi/pkp-gvm",
+    "commit": "0152bb4150a34cff2abcf46a6e586e317c13b946"
   },
   "requirements": {
     "minAppVersion": "1.0.0",
